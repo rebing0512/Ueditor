@@ -1,5 +1,5 @@
 {
-  "name": "mbcore/ueditor",
+  "name": "rebing0512/ueditor",
   "description": "is MBCore Ueditor Packages",
   "type": "project",
   "license": "MIT",
@@ -13,7 +13,7 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "MBCore\\BaseUser\\": "src/"
+      "MBCore\\Ueditor\\": "src/"
     }
   },
   "extra": {
