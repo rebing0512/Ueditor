@@ -1,0 +1,26 @@
+{
+  "name": "mbcore/ueditor",
+  "description": "is MBCore Ueditor Packages",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MBCore Jiefan",
+      "email": "i@mbcore.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "MBCore\\BaseUser\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MBCore\\Ueditor\\ServiceProvider"
+      ]
+    }
+  }
+}
