@@ -5,14 +5,14 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Rebing0512",
+      "name": "rebing0512",
     }
   ],
   "minimum-stability": "dev",
   "require": {},
   "autoload": {
     "psr-4": {
-      "Rebing0512\\Ueditor\\": "src/"
+      "Rebing0512\\Ueditor\\": "src"
     }
   },
   "extra": {
