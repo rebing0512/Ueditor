@@ -5,21 +5,20 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "MBCore Jiefan",
-      "email": "i@mbcore.com"
+      "name": "Rebing0512",
     }
   ],
   "minimum-stability": "dev",
   "require": {},
   "autoload": {
     "psr-4": {
-      "MBCore\\Ueditor\\": "src/"
+      "Rebing0512\\Ueditor\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "MBCore\\Ueditor\\ServiceProvider"
+        "Rebing0512\\Ueditor\\ServiceProvider"
       ]
     }
   }
