@@ -1,6 +1,6 @@
 <?php
 
-namespace MBCore\Ueditor;
+namespace Jenson\Ueditor;
 
 class ServiceProvider extends Controllers
 {
@@ -22,7 +22,7 @@ class ServiceProvider extends Controllers
 
         // 【5】资源文件
         $this->publishes([
-            __DIR__.'/resources/assets' => public_path('assets/MBCore/Ueditor'),
+            __DIR__.'/resources/assets' => public_path('assets/Jenson/Ueditor'),
         ], 'public');
 
     }

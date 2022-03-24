@@ -1,25 +1,25 @@
 {
-  "name": "rebing0512/ueditor",
-  "description": "is rebing Ueditor Packages",
+  "name": "jenson0512/ueditor",
+  "description": "Jenson Ueditor Packages",
   "type": "project",
   "license": "MIT",
   "authors": [
     {
-      "name": "wangjian",
-      "email": "wangjian@mbcore.com"
+      "name": "Jenson",
+      "email": "rebing0512@aliyun.com"
     }
   ],
   "minimum-stability": "dev",
   "require": {},
   "autoload": {
     "psr-4": {
-      "Rebing0512\\Ueditor\\": "src/"
+      "Jenson\\Ueditor\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Rebing0512\\Ueditor\\ServiceProvider"
+        "Jenson\\Ueditor\\ServiceProvider"
       ]
     }
   }
