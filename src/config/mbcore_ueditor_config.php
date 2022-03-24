@@ -6,7 +6,7 @@
  * Time: 11:14
  */
 //图片访问路径前缀【项目主域名/项目二级目录名称】
-$imageUrlPrefix = '';
+$imageUrlPrefix = env('APP_URL',null);
 return /* 前后端通信相关的配置,注释只允许使用多行方式 */
     '{
     /* 上传图片配置项 */
