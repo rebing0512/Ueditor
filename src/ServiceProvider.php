@@ -4,7 +4,6 @@ namespace Jenson\Ueditor;
 
 class ServiceProvider extends Controllers
 {
-
     public function boot()
     {
         // 配置
@@ -15,8 +14,6 @@ class ServiceProvider extends Controllers
         $this->publishes([
             __DIR__.'/config/mbcore_ueditor.php' => config_path('mbcore_ueditor.php'),
         ], 'config');
-
-
         // 资源文件
         $this->publishes([
             __DIR__.'/resources/assets' => public_path('assets/Jenson/Ueditor'),
