@@ -21,7 +21,7 @@ class UeditorController extends Controller
 
             /* 图片上传 */
             case 'uploadimage':
-            /* �ϴ�Ϳѻ */
+            /* 上传涂鸦 */
             case 'uploadscrawl':
             /* 上传视屏 */
             case 'uploadvideo':
