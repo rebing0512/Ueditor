@@ -1,7 +1,6 @@
 <?php
-
 namespace Jenson\Ueditor\Controllers;
-use Illuminate\Http\Request;
+
 use App\Http\Controllers\Controller;
 
 class UeditorController extends Controller
