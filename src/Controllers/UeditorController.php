@@ -19,43 +19,43 @@ class UeditorController extends Controller
                 $result =  json_encode($CONFIG);
                 break;
 
-            /* 图片上传 */
+            /* 上传图片 */
             case 'uploadimage':
             /* 上传涂鸦 */
             case 'uploadscrawl':
-            /* 上传视屏 */
+            /* 上传视频 */
             case 'uploadvideo':
-            /* 文件上传 */
+            /* 上传文件 */
             case 'uploadfile':
                 $result = include("action_upload.php");
                 break;
 
-            /* 图片列表 */
+            /* 列出图片 */
             case 'listimage':
-            /* 文件列表 */
+            /* 列出文件 */
             case 'listfile':
                 $result = include("action_list.php");
                 break;
 
-            /* 抓取图片 */
+            /* 抓取远程文件 */
             case 'catchimage':
                 $result = include("action_crawler.php");
                 break;
 
             default:
                 $result = json_encode(array(
-                    'state'=> '附件上传异常'
+                    'state'=> '请求地址出错'
                 ));
                 break;
         }
 
-        /* 附件上传回调 */
+        /* 输出结果 */
         if (isset($_GET["callback"])) {
             if (preg_match("/^[\w_]+$/", $_GET["callback"])) {
                 echo htmlspecialchars($_GET["callback"]) . '(' . $result . ')';
             } else {
                 echo json_encode(array(
-                    'state'=> 'callback异常'
+                    'state'=> 'callback参数不合法'
                 ));
             }
         } else {
